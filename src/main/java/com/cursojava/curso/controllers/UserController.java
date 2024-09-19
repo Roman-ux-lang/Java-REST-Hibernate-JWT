@@ -66,49 +66,7 @@ public class UserController {
         return List.of("banana","apple","strawberry");
     }
 
-    /*@RequestMapping(value = "users")
-    public  List<User> getUsers(){
-
-        List<User> users = new ArrayList<>();
-
-        User user1 = new User();
-        user1.setId(12454L);
-        user1.setName("Leonardo");
-        user1.setSurname("Reséndiz Trejo");
-        user1.setEmail("leonardo@outlook.com");
-        user1.setPhone("55-44-55-67-88");
-
-        User user2 = new User();
-        user2.setId(23454L);
-        user2.setName("Silvestre");
-        user2.setSurname("Reséndiz Sánchez");
-        user2.setEmail("silvestre@outlook.com");
-        user2.setPhone("55--66-77-44-33-77");
-
-        User user3 = new User();
-        user3.setId(43235L);
-        user3.setName("Macrina");
-        user3.setSurname("Trejo Pérez");
-        user3.setEmail("macrina@outlook.com");
-        user3.setPhone("55-67-24-65-23");
-        
-        User user4 = new User();
-        user4.setId(1234L);
-        user4.setName("Román");
-        user4.setSurname("Reséndiz Trejo");
-        user4.setEmail("romanresendiztrejo@outlook.com");
-        user4.setPhone("55-60-88-54-66");
-
-        users.add(user1);
-        users.add(user2);
-        users.add(user3);
-        users.add(user4);
-
-        return  users;
-
-    }*/
-
-    @RequestMapping(value = "api/user/{id}")
+   @RequestMapping(value = "api/user/{id}")
     public User getUser(@PathVariable Long id){
         User user = new User();
         user.setId(id);
