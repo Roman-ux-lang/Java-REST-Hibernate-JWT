@@ -1,3 +1,10 @@
+/*
+ * This script manages user login functionality for a web application.
+ * It collects the user's email and password from input fields,
+ * sends the login data to the server via a POST request, and 
+ * handles the server's response to either log the user in or display an error message.
+ */
+
 $(document).ready(function(){
     // on ready
 });
