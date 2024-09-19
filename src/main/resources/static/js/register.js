@@ -1,3 +1,10 @@
+/*
+ * This script handles user registration in a web application.
+ * It collects user input from a registration form, validates the input (specifically, the password confirmation),
+ * and sends the registration data to the server via a POST request. 
+ * Upon successful registration, it alerts the user and redirects them to the login page.
+ */
+
 //Call the dataTables jQuery plugin
 $(document).ready(function(){
     //on ready
