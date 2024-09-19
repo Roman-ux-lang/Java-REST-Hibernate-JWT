@@ -1,3 +1,9 @@
+/*
+ * This script manages user-related functionalities for a web application,
+ * including fetching user data from an API, displaying it in a table using DataTables,
+ * updating the user's email on the page, and enabling the deletion of users.
+ */
+
 // Call the dataTables jQuery plugin
 $(document).ready(function() {
    getUsers();
