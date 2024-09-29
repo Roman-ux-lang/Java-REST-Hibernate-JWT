@@ -54,10 +54,4 @@ public class UserController {
         userDao.deleteUser(id);
     }
 
-    // example method request
-    @RequestMapping(value = "api/test")
-    public String test(){
-        return "Test";
-    }
-
 }
