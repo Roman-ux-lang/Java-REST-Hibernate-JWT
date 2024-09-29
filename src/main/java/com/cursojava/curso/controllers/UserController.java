@@ -60,21 +60,4 @@ public class UserController {
         return "Test";
     }
 
-    //example method request
-    @GetMapping("api/list")
-    public List<String> myList(){
-        return List.of("banana","apple","strawberry");
-    }
-
-   @RequestMapping(value = "api/user/{id}")
-    public User getUser(@PathVariable Long id){
-        User user = new User();
-        user.setId(id);
-        user.setName("Román");
-        user.setSurname("Reséndiz Trejo");
-        user.setEmail("romanresneiztrejo@outlook.com");
-        user.setPhone("55-60-90-88-75");
-        return  user;
-
-    }
 }
