@@ -30,7 +30,6 @@ public class UserController {
        return userId != null;
     }
 
-
     @RequestMapping(value = "api/users", method = RequestMethod.GET)
     public List<User> getUsers(@RequestHeader(value = "Authorization") String token){
 
